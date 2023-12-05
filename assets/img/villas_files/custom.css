@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+:root {
+  /* --color-600: #474545; */
+  --color-black: #000;
+  --color-gray-300: #d3d3d3;
+  --color-gray-400: #929292;
+  --color-gray-500: #8e8e8e;
+  --color-gray-600: #a27b5c;
+  --color-gold: #a27b5c;
+  --color-cream: #ffecdc;
+
+}
+
+/* Start Default css */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.h2 {
+  font-family: 'Gilda Display', serif;
+  font-size: 50px;
+  color: var(--color-gold);
+}
+
+.h3 {
+  font-family: 'Gilda Display', serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 26px;
+}
+
+p,
+li {
+  font-family: 'Montserrat', sans-serif;
+}
+p{
+  color: #7d7d7d;
+  font-size: 16px;
+}
+
+.before-heading {
+  font-family: 'Gilda Display', serif;
+  position: relative;
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 2.5rem;
+  color: var(--color-black);
+}
+
+.before-heading::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: var(--color-black);
+}
+
+.before-para {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  padding-left: 7rem;
+  color: var(--color-gray-500);
+}
+
+.before-para::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--color-cream);
+}
+
+.btn-common-style {
+  border: 2px solid var(--color-gray-400);
+  padding: 10px 25px;
+  margin-right: 1.5rem;
+  font-family: 'Gilda Display', serif;
+  font-weight: 600;
+  background: transparent;
+  color: var(--color-gray-400);
+}
+
+.black-btn {
+  border: 2px solid var(--color-black);
+  color: var(--color-black);
+}
+
+/* .contact-section .form-control:focus, */
+.contact-section .form-control {
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  border-bottom: 2px solid var(--color-gray-400);
+  /* padding-left: 0px; */
+}
+
+.contact-section textarea {
+  margin-top: 0rem;
+  height: 15vh;
+}
+
+.service-section img,
+.our-work-section img {
+  width: 100%;
+}
+img{
+  pointer-events: none;
+}
+
+/* End Default css */
+
+
+/* Start Home Page */
+.container {
+  overflow: hidden;
+}
+
+/* Start Hero section*/
+.hero-section {
+  background-image: url(../images/hero-banner.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.banner-common-img {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-section-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  padding: 0px 0.5rem;
+}
+
+.hero-section-content h1 {
+  font-size: 58px;
+}
+
+/* End Hero section*/
+
+
+
+.dark {
+  position: absolute;
+  width: 200px;
+  left: 0;
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+/* Start Who  are section */
+.home-child-img {
+  width: 250px;
+  height: 300px;
+  position: absolute;
+  left: -125px;
+  top: 30%;
+  transform: translateY(-50%);
+}
+.home-child-img2 {
+  position: absolute;
+    left: -100px;
+    top: 13%;
+}
+
+.sea-rose-img {
+  width: 85%;
+}
+
+.sea-rose-child-img {
+  left: -61px;
+}
+
+.who-we-col-left {
+  padding-right: 12rem;
+}
+
+.who-we-col-right {
+  padding-left: 12rem;
+}
+
+/* End Who we are section */
+
+/* Start Service Section */
+.service-section {
+  background-color: #ffecdc;
+}
+
+
+.our-work-left-inner-col {
+  width: 570px;
+}
+
+.service-card-title {
+  background-color: var(--color-gray-600);
+  /* margin-toSp: 0.7rem; */
+  padding: 2.3rem 0rem;
+}
+
+/* End Service Section */
+
+
+/* Start Our Work Section */
+.our-work-box {
+  padding: 3px 0px 0px 3px;
+}
+
+/* End Our Work Section */
+
+.best-choice li {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-black);
+  position: relative;
+  display: inline-block;
+  line-height: 3rem;
+
+}
+
+.best-choice li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-gray-400);
+}
+
+/* Start Home Page */
+
+/* Start Our Work Page */
+.our-work-div-img {
+  /* background-image: url(../images/engineering-construction-banner.jpg); */
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.video-para p {
+  line-height: 25px;
+  font-size: 14px;
+}
+
+.vertical-line {
+  position: relative;
+  padding-right: 30px;
+}
+
+.vertical-line::after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 100%;
+  right: 15px;
+  top: -6px;
+  background-color: #f0f0f0;
+
+}
+
+.our-right-col {
+  padding-right: 30px;
+}
+
+.hide-in-lg {
+  display: none !important;
+}
+
+.para-div {
+  position: relative;
+  padding-left: 117px;
+}
+
+.para-comma {
+  position: relative;
+  font-size: 35px;
+}
+
+.para-comma::before {
+  position: absolute;
+  content: url(../images/comma.png);
+  color: #000;
+  font-size: 25px;
+  left: -115px;
+  top: 0px;
+}
+/* .sub-menu{
+  transition: all 0.5;
+  display: none;
+} */
+
+
+/* ----- */
+.video-heading h5{
+  font-size: 17px;
+}
+.video-heading p{
+  font-size: 14px;
+  color: #818181;
+  font-weight: 500;
+}
+.location-img-col{
+  /* padding: 0px 3px 0px; */
+}
+.location-img-box {
+  background-image: linear-gradient(to bottom right,#000000,#7c7c7c);
+  position: relative;
+  z-index: 9999;
+}
+.location-img-box  h5{
+  font-size: 16px;
+}
+.location-img-box  p{
+  font-size: 14px;
+}
+.location-img-box img{
+  opacity: 0.4;
+  width: 100%
+}
+.location-img-content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0.3rem;
+}
+
+/* End Our Work Page */
+/* Start Contact Page */
+.contact-page .contact-section {}
+
+.contact-section .form-control {
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  border: 2px solid #929292;
+  border: 2px solid #b6b6b6;
+  padding: 13px 10px;
+  cursor: pointer;
+  color: #747474;
+}
+
+textarea {
+  resize: none;
+}
+
+.contact-page .contact-section textarea {
+  resize: none;
+  margin-top: 0px;
+}
+
+.contact-page select {
+  color: #b6b6b6;
+}
+
+.contact-page .contact-section .btn-common-style {
+  padding: 12px 30px;
+  color: #b6b6b6;
+  background-color: #fff;
+  font-size: 18px;
+  border: 2px solid #b6b6b6;
+  position: relative;
+}
+
+.contact-page .contact-section select {
+  position: relative;
+
+}
+
+.contact-page .contact-section select::after {
+  content: url(../images/down.png);
+  position: absolute;
+  right: 10px;
+  z-index: 99999;
+  top: 59%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.social-ul li {
+  position: relative;
+  left: 30px;
+  line-height: 35px;
+}
+
+.social-ul li a {
+  color: #7d7d7d;
+}
+
+.social-ul li:nth-child(1)::before,
+.social-ul li:nth-child(2)::before,
+.social-ul li:nth-child(3)::before {
+  position: absolute;
+  left: -30px;
+  top: 6px;
+}
+
+.social-ul li:nth-child(1)::before {
+  content: url(../images/gold-location.png);
+}
+
+.social-ul li:nth-child(2)::before {
+  content: url(../images/gold-phone.png);
+
+}
+
+.social-ul li:nth-child(3)::before {
+  content: url(../images/gold-envelope.png);
+
+}
+
+/* End Contact Page */
+
+.cnb-floating-label div {
+  background-color: #a27b5c;
+  margin-bottom: 0px;
+  position: relative;
+}
+
+/* Start Property Page */
+.property-page .project-title {
+  color: #000;
+  font-weight: 500;
+}
+.upcoming .current-project-box img {
+  filter: blur(3px);
+}
+
+/* End Property Page */
+
+footer a,
+footer h5 {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+footer ul li {
+    line-height: 28px;
+}
+.whatsapp-container {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 1.5rem 0.5rem;
+  z-index: 9999;
+}
+
+@import "medium.css";
+@import "phone.css";

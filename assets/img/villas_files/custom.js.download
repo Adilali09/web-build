@@ -1,0 +1,105 @@
+$(document).ready(function() {
+     // Hamburger
+     $("#nav-icon2").click(function() {
+        $('#nav-icon2').toggleClass("open");
+        $(".header-menu").slideToggle(400);
+        $("body").toggleClass('body-active');
+        $(".social-icon-img").toggleClass('light-icons');
+    });
+    
+    // append in select option
+    $('#select-custom-value option:first').html("Select Services")
+    $('#select-custom-value').append("<li>Appended item</li>")
+
+    // home slider
+    $('#home-page-slider').owlCarousel({
+         autoplay: false,
+        autoplaySpeed: 3000,
+        // autoplayTimeout: 3000,
+        smartSpeed: 3000,
+        items: 1,
+        stagePadding: 0,
+        center: true,
+        nav: false,
+        margin: 0,
+        dots: true,
+        loop: true,
+        touchDrag: false,
+        mouseDrag: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            480: {
+                items: 1
+            },
+            575: {
+                items: 1
+            },
+            768: {
+                items: 1
+            },
+            991: {
+                items: 1
+            },
+            1200: {
+                items: 1
+            }
+        }
+    });
+  
+    // Our Work Page
+    $('#our-work-page-slider').owlCarousel({
+        autoplay: true,
+        //   slideTransition: 'linear',
+        autoplaySpeed: 3000,
+        autoplayTimeout: 4000,
+        smartSpeed: 3000,
+        items: 1,
+        stagePadding: 0,
+        center: true,
+        nav: true,
+        margin: 0,
+        dots: false,
+        loop: true,
+        touchDrag: false,
+        mouseDrag: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            480: {
+                items: 1
+            },
+            575: {
+                items: 1
+            },
+            768: {
+                items: 1
+            },
+            991: {
+                items: 1
+            },
+            1200: {
+                items: 1
+            }
+        }
+    });
+   
+    $(".dropdown").click(function() {
+        $(this).children(".sub-menu").toggle(400);
+        console.log($('.dropdown-arrow'))
+        // $('.dropdown-arrow').toggleClass('dropdown-rotate')
+      });
+    $('.sub-menu a').click(function(){
+        document.location.reload()
+    })
+   
+});
+
+// var video = document.getElementById('video');
+// console.log(video)
+// video.muted = true;
+
+
+

@@ -1,0 +1,21 @@
+@media(max-width: 768px){
+    .who-we-col-left{
+        padding-right: 0rem;
+    }
+    .bg-img{
+        width: 82%;
+        margin-left: auto;
+    }  
+    .sea-rose-img {
+        width: 100%;
+    }
+    .hide-in-768{
+        display: none;
+      }
+      .hide-in-lg{
+        display: unset !important;
+      }
+      .map-section img {
+        width: 100%;
+    }
+}
